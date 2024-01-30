@@ -395,7 +395,6 @@ input[type=number] {
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image:url(/images/homeHeader.jpg);
     top:83px;
 }
 
@@ -637,7 +636,6 @@ input[type=number] {
 }
 
 .collage{
-    background-image:url(/images/industry.jpeg);
     background-size:cover;
     background-position:center center;
 }
@@ -923,7 +921,6 @@ input[type=number] {
 }
 
 .industryTestimonials{
-    background-image:url(/images/industry.jpeg);
     background-size:cover;
     background-position:center center;
     padding:60px 0;
