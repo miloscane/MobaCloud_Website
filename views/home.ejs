@@ -1,12 +1,13 @@
 <%- include ("partials/header") -%>
 	<div class="homeHeader" style="background-image:url(<%=bucket%>/images/homeHeader.jpg);">
+		<div class="scrollAnchor" id="home"></div>
 		<div class="overlay"></div>
 		<div class="contentWidth">
 			<div class="titleWrap">
 				<h1 class="site-title">MobaCloud</h1>
-				<h2>Process Simulation</h2>
-				<h3>Educational LMS Plug-in</h3>
-				<h2 class="site-description">Een web-based Operator Training Simulator, die toegankelijk is via een webbrowser, waarmee procesoperators of studenten hun vaardigheden overal en op elk apparaat kunnen oefenen en verbeteren, en waarmee managers of docenten de voortgang kunnen volgen op elk Learning Management Systeem</h2>
+				<h2 class="site-sub-title">Process Simulation</h2>
+				<h3 class="site-sub-sub-title">Educational LMS Plug-in</h3>
+				<h4 class="site-description">Een web-based Operator Training Simulator, die toegankelijk is via een webbrowser, waarmee procesoperators of studenten hun vaardigheden overal en op elk apparaat kunnen oefenen en verbeteren, en waarmee managers of docenten de voortgang kunnen volgen op elk Learning Management Systeem</h2>
 				<div class="buttonsWrap">
 					<div class="button demo">Start Demo</div>
 					<div class="button contact">Contact</div>
@@ -30,11 +31,11 @@
 				</div>
 				<div class="review">
 					<div class="image">
-						<img src="<%=bucket%>/images/jasper.jpeg">
+						<img src="<%=bucket%>/images/Rene-ter-Voort.jpg">
 					</div>
 					<div class="quoteWrap">
 						<div class="quote">"De beste simulatie software voor proces operators"</div>
-						<div class="signature">René Ter Voort <span>(Project manager onderwijs)</span></div>
+						<div class="signature">René Ter Voort <span>(Project manager onderwijs @<a href='https://stc.nl/' target="_blank">STC</a>)</span></div>
 					</div>
 				</div>
 			</div>
@@ -59,6 +60,7 @@
 		</div>
 	</div>
 	<div class="white titleText" style="margin-top:83px">
+		<div class="scrollAnchor" id="demo"></div>
 		<div class="contentWidth">
 			<div class="title">Verbeter het onderwijs in Operator A/B/C Opleidingen.</div>
 			<div class="text">Mobatec heeft een cloudoplossing die docenten en scholen helpt bij het onderwijzen van operators op elk nivo. Met onze software kunnen gebruikers complexe processen vitrueel besturen en analyseren, waardoor ze een dieper inzicht krijgen in het vakgebied.</div>
@@ -146,8 +148,9 @@
 		</div>
 	</div>
 	<div class="white licensing">
+		<div class="scrollAnchor" id="license"></div>
 		<div class="contentWidth">
-			<div class="sectionTitle">Licensing</div>
+			<div class="sectionTitle">Licenties</div>
 			<div class="boxes">
 				<!--<div class="box">
 					<div class="title">Student</div>
@@ -166,31 +169,39 @@
 							<div class="name">5 modules with eLeanings</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<div class="box popular">
 					<div class="title">Classroom</div>
-					<div class="boxDescription">25 students annual license</div>
-					<div class="price">500&euro;<span>/year</span></div>
+					<div class="boxDescription">License used for educational purposes.</div>
+					<div class="price">Contact us</div>
 					<div class="buttonWrap">
 						<div class="button">Get started</div>
 					</div>
 					<div class="attributes">
 						<div class="attribute">
 							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">25 floating licenses</div>
+							<div class="name">Classroom kits</div>
 						</div>
 						<div class="attribute">
 							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">5 modules with eLeanings</div>
+							<div class="name">Teacher login</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">Adaptable eLearnings</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">Adaptable process simulations</div>
 						</div>
 						<div class="attribute">
 							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
 							<div class="name">Connection to Learning management systems</div>
 						</div>
 					</div>
-					<div class="mostPopular">MOST POPULAR</div>
-				</div>-->
-				<div class="box">
+					<!--<div class="mostPopular">MOST POPULAR</div>-->
+				</div>
+				<div class="box popular">
 					<div class="title">Industrial</div>
 					<div class="boxDescription">License is used for commercial purposes.</div>
 					<div class="price">Contact us</div>
@@ -204,7 +215,23 @@
 						</div>
 						<div class="attribute">
 							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">Tailored modules and DCS look</div>
+							<div class="name">OTS Engine license</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">Instructor logon</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">Tailored process simulations</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">100% DCS replica</div>
+						</div>
+						<div class="attribute">
+							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
+							<div class="name">Adaptable scenarios</div>
 						</div>
 						<div class="attribute">
 							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
@@ -215,9 +242,9 @@
 			</div>
 		</div>
 	</div>
-	<!--<div class="industryTestimonials" style="background-image:url(<%=bucket%>/images/industry.jpeg);">
+	<div class="industryTestimonials" style="background-image:url(<%=bucket%>/images/industry.jpeg);">
 		<div class="contentWidth">
-			<div class="testimonialWrap">
+			<!--<div class="testimonialWrap">
 				<div class="content">
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				</div>
@@ -228,21 +255,46 @@
 						<div class="company">Huntsman</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<div class="testimonialWrap">
 				<div class="content">
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+					"De jeug is de toekomst en wij helpen ze aansluiten bij de industrie."
 				</div>
 				<div class="person">
-					<div class="image"><img src="<%=bucket%>/images/jasper.jpeg"></div>
+					<div class="image"><img src="<%=bucket%>/images/Mathieu-Westerweele.png"></div>
 					<div class="signature">
-						<div class="name">Jasper Ruten <span>(plant manager)</span></div>
-						<div class="company">Huntsman</div>
+						<div class="name">Mathieu Westerweele <span>(Managing director)</span></div>
+						<div class="company">Mobatec</div>
 					</div>
 				</div>
 			</div>
-		</div>-->
+		</div>
 
 		<!--Mathieu quote, and logos of companies after that-->
+
+		<!--Calendly page-->
+	</div>
+	<div class="white logos">
+		<div class="scrollAnchor" id="testimonials"></div>
+		<div class="contentWidth">
+			<div class="title">Trusted by</div>
+			<div class="logosWrap">
+				<div class="logoWrap">
+					<img src="<%=bucket%>/images/stc.png">
+				</div>
+				<div class="logoWrap">
+					<img src="<%=bucket%>/images/tata.png">
+				</div>
+				<div class="logoWrap">
+					<img src="<%=bucket%>/images/sartorius.png">
+				</div>
+				<div class="logoWrap">
+					<img src="<%=bucket%>/images/technicom.png">
+				</div>
+				<div class="logoWrap">
+					<img src="<%=bucket%>/images/litop.png">
+				</div>
+			</div>
+		</div>
 	</div>
 <%- include ("partials/footer") -%>

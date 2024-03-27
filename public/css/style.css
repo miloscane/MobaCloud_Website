@@ -435,6 +435,23 @@ input[type=number] {
 
 .homeHeader h2{
     background-color:rgba(0,0,0,0);
+    color:rgb(37,78,118);
+    font-size:22px;
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+.homeHeader h3{
+    background-color:rgba(0,0,0,0);
+    color:rgb(37,78,118);
+    font-size:20px;
+    font-weight:200;
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+.homeHeader h4{
+    background-color:rgba(0,0,0,0);
     color:rgb(20,42,64);
     font-size:18px;
     line-height: 26px;
@@ -947,8 +964,8 @@ input[type=number] {
 
 .industryTestimonials .contentWidth .testimonialWrap .content{
     font-style:italic;
-    font-weight:200;
-    font-size:14px;
+    font-weight:400;
+    font-size:20px;
     margin-bottom:20px;
 }
 
@@ -989,6 +1006,40 @@ input[type=number] {
 
 .industryTestimonials .contentWidth .testimonialWrap .person .signature .company{
     font-weight:500;
+}
+
+.logosWrap{
+    font-size:0;
+    text-align:center;
+}
+
+.logosWrap .logoWrap{
+    display:inline-block;
+    vertical-align: middle;
+    padding:25px;
+    width:30%;
+}
+
+.logosWrap .logoWrap:first-child{
+    padding:50px;
+}
+
+.logosWrap .logoWrap img{
+    aspect-ratio: 5/2;
+    object-fit: contain;
+}
+
+.logos .title{
+    font-weight:700;
+    font-size:32px;
+    color:rgb(20,42,64);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.scrollAnchor{
+    position:absolute;
+    top:-84px;
 }
 
 footer{
@@ -1147,6 +1198,14 @@ footer .footerContent .footerLogo .inline{
     .licensing .boxes .box{
         width:80%;
     }
+
+    .logosWrap .logoWrap{
+        padding:15px;
+    }
+
+    .logosWrap .logoWrap:first-child{
+        padding:30px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1176,6 +1235,10 @@ footer .footerContent .footerLogo .inline{
 
     .description .textWrap{
         width:100%;
+    }
+
+    .logosWrap .logoWrap{
+        width:48%;
     }
 
     footer .footerContent .footerLogo .inline{

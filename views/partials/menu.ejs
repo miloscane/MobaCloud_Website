@@ -4,14 +4,13 @@
 			<img src="<%=bucket%>/images/mobatecLogo.svg">
 		</div>
 		<div class="menu">
-			<div class="menuItem">Over ons</div>
-			<div class="menuItem">Demo</div>
-			<div class="menuItem">Licenties</div>
-			<div class="menuItem">Testimonials</div>
-			<div class="menuItem">Company</div>
+			<div class="menuItem" onclick="scrollToSection('home')">Over ons</div>
+			<div class="menuItem" onclick="scrollToSection('demo')">Demo</div>
+			<div class="menuItem" onclick="scrollToSection('license')">Licenties</div>
+			<div class="menuItem" onclick="scrollToSection('testimonials')">Testimonials</div>
 			<div class="contactPhoneButton">CONTACT</div>
 		</div>
-		<div class="responsiveHandle" onclick="openMenu(this)">
+		<div class="responsiveHandle" id="responsive-menu-handle" onclick="openMenu(this)">
 			<div class="wrap">
 				<div class="topBar bar"></div>
 				<div class="middleBar bar"></div>
@@ -31,6 +30,17 @@
 					menu.classList.add(menu.classList[0]+"Active");
 					elem.classList.add(elem.classList[0]+"Active");
 					elem.dataset.opened = 1;
+				}
+			}
+
+			function scrollToSection(sectionId){
+				if(document.getElementById(sectionId)){
+					document.getElementById(sectionId).scrollIntoView({ block: 'start',  behavior: 'smooth' });
+					if(document.getElementById("responsive-menu-handle").dataset.opened==1){
+						openMenu(document.getElementById("responsive-menu-handle"))
+					}
+				}else{
+					console.log("Couldn't find section to scroll to")
 				}
 			}
 		</script>
