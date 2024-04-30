@@ -44,3 +44,9 @@ server.get('/',async (req,res)=>{
 		bucket: bucket
 	});
 });
+
+server.get('/demo',async (req,res)=>{
+	res.render("demo",{
+		bucket: bucket
+	});
+});
